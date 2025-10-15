@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "texture": "minecraft:item/copper_ingot",
+  "ingredient": {"item":"minecraft:copper_ingot"},
+  "name": "trim_material.examplemod.copper_like"
+}

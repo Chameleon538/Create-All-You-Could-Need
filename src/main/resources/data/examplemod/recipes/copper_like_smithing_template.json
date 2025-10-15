@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "ICI",
+    " P "
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond" },
+    "I": { "item": "minecraft:copper_ingot" },
+    "C": { "item": "minecraft:paper" },
+    "P": { "item": "minecraft:paper" }
+  },
+  "result": {
+    "item": "examplemod:copper_like_smithing_template",
+    "count": 1
+  }
+}

@@ -12,7 +12,7 @@
     "P": { "item": "minecraft:paper" }
   },
   "result": {
-    "item": "examplemod:copper_like_smithing_template",
+  "item": "createaycn:copper_like_smithing_template",
     "count": 1
   }
 }

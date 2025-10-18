@@ -1,6 +1,13 @@
 {
-  "replace": false,
-  "texture": "minecraft:item/copper_ingot",
-  "ingredient": {"item":"minecraft:copper_ingot"},
-  "name": "trim_material.createaycn.copper_like"
+  "asset_name": "copper_like",
+  "ingredient": {
+    "item": "minecraft:copper_ingot"
+  },
+  "item_model_index": 0.2,
+  "override_armor_materials": {
+    "leather": "copper_ingot"
+  },
+  "description": {
+    "translate": "trim_material.createaycn.copper_like"
+  }
 }

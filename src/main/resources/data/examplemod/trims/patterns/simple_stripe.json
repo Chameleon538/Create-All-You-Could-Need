@@ -1,5 +1,7 @@
 {
-  "replace": false,
-  "texture": "minecraft:item/diamond",
-  "name": "trim_pattern.createaycn.simple_stripe"
+  "asset_id": "createaycn:simple_stripe",
+  "template_item": "createaycn:copper_like_smithing_template",
+  "description": {
+    "translate": "trim_pattern.createaycn.simple_stripe"
+  }
 }

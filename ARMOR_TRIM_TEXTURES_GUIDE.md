@@ -20,10 +20,10 @@ src/main/resources/
             └── trims/
                 └── models/
                     └── armor/
-                        ├── simple_stripe.png           (pattern overlay for leather armor)
-                        ├── simple_stripe_leggings.png  (pattern overlay for leather leggings)
-                        ├── simple_stripe_darker.png    (pattern for chainmail)
-                        └── simple_stripe_darkest.png   (pattern for all other armor materials)
+                        ├── cog.png           (pattern overlay for leather armor)
+                        ├── cog_leggings.png  (pattern overlay for leather leggings)
+                        ├── cog_darker.png    (pattern for chainmail)
+                        └── cog_darkest.png   (pattern for all other armor materials)
 ```
 
 ## Creating Pattern Textures
@@ -68,15 +68,15 @@ You need to create 4 texture files for each armor trim pattern:
    - `_darkest.png`: Reduce brightness by 40-50%
    - This ensures the pattern is visible on all armor types
 
-## Example: Simple Stripe Pattern
+## Example: Cog Pattern
 
-For the "simple_stripe" pattern in this mod:
+For the "cog" pattern in this mod:
 
 1. Create a simple horizontal stripe design in white
-2. Save it as `simple_stripe.png` (for leather)
-3. Adjust for leggings layout, save as `simple_stripe_leggings.png`
-4. Darken by 25%, save as `simple_stripe_darker.png` (chainmail)
-5. Darken by 45%, save as `simple_stripe_darkest.png` (other armor)
+2. Save it as `cog.png` (for leather)
+3. Adjust for leggings layout, save as `cog_leggings.png`
+4. Darken by 25%, save as `cog_darker.png` (chainmail)
+5. Darken by 45%, save as `cog_darkest.png` (other armor)
 
 ## Material Colors
 
@@ -106,15 +106,15 @@ The material's texture reference determines the base color applied to your patte
 
 Patterns are defined in:
 ```
-src/main/resources/data/createaycn/trims/patterns/simple_stripe.json
+src/main/resources/data/createaycn/trims/patterns/cog.json
 ```
 
 ```json
 {
-  "asset_id": "createaycn:simple_stripe",
-  "template_item": "createaycn:copper_like_smithing_template",
+  "asset_id": "createaycn:cog",
+  "template_item": "createaycn:cog_smithing_template",
   "description": {
-    "translate": "trim_pattern.createaycn.simple_stripe"
+    "translate": "trim_pattern.createaycn.cog"
   }
 }
 ```

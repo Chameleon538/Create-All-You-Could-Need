@@ -1,7 +1,7 @@
 {
-  "asset_id": "createaycn:simple_stripe",
-  "template_item": "createaycn:copper_like_smithing_template",
+  "asset_id": "createaycn:cog",
+  "template_item": "createaycn:cog_smithing_template",
   "description": {
-    "translate": "trim_pattern.createaycn.simple_stripe"
+    "translate": "trim_pattern.createaycn.cog"
   }
 }

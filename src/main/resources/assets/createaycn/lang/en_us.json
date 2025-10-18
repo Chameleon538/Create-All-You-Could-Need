@@ -1,5 +1,5 @@
 {
-  "trim_material.createaycn.copper_like": "Copper-like",
-  "trim_pattern.createaycn.simple_stripe": "Simple Stripe",
-  "item.createaycn.copper_like_smithing_template": "Copper-like Smithing Template"
+  "trim_material.createaycn.cog": "Copper-like",
+  "trim_pattern.createaycn.cog": "Cog",
+  "item.createaycn.cog_smithing_template": "Copper-like Smithing Template"
 }

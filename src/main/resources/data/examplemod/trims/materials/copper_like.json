@@ -1,5 +1,5 @@
 {
-  "asset_name": "copper_like",
+  "asset_name": "cog",
   "ingredient": {
     "item": "minecraft:copper_ingot"
   },
@@ -8,6 +8,6 @@
     "leather": "copper_ingot"
   },
   "description": {
-    "translate": "trim_material.createaycn.copper_like"
+    "translate": "trim_material.createaycn.cog"
   }
 }

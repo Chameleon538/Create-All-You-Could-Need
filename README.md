@@ -8,20 +8,20 @@ A Minecraft Forge mod for Minecraft 1.20.1 that adds custom armor trims and othe
 
 This mod includes a custom armor trim system featuring:
 
-- **Copper-Like Smithing Template**: A smithing template that applies the "Simple Stripe" pattern to armor
-- **Simple Stripe Pattern**: A custom armor trim pattern
-- **Copper-Like Material**: Uses copper ingots to apply trim coloring
+- **Cog Smithing Template**: A smithing template that applies the "Cog" pattern to armor
+- **Cog Pattern**: A custom armor trim pattern
+- **Cog Material**: Uses copper ingots to apply trim coloring
 
 #### How to Use Armor Trims
 
-1. Craft or obtain the Copper-Like Smithing Template
+1. Craft or obtain the Cog Smithing Template
 2. Place a Smithing Table
 3. Add your armor piece (helmet, chestplate, leggings, or boots)
-4. Add the Copper-Like Smithing Template
+4. Add the Cog Smithing Template
 5. Add a Copper Ingot
 6. Take the trimmed armor from the result slot!
 
-The armor will now display the Simple Stripe pattern with copper coloring.
+The armor will now display the Cog pattern with copper coloring.
 
 ## For Developers
 

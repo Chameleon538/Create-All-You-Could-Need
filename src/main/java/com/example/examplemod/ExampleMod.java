@@ -56,8 +56,8 @@ public class ExampleMod
 
     // A smithing template item so players can apply our custom trim (registered so the recipe and assets match)
     // The smithing template must reference a trim pattern resource (the template item shows pattern info),
-    // so use the pattern id (createaycn:simple_stripe) here.
-    public static final RegistryObject<Item> COPPER_LIKE_SMITHING_TEMPLATE = ITEMS.register("copper_like_smithing_template", () -> net.minecraft.world.item.SmithingTemplateItem.createArmorTrimTemplate(new net.minecraft.resources.ResourceLocation(MODID, "simple_stripe")));
+    // so use the pattern id (createaycn:cog) here.
+    public static final RegistryObject<Item> COG_SMITHING_TEMPLATE = ITEMS.register("cog_smithing_template", () -> net.minecraft.world.item.SmithingTemplateItem.createArmorTrimTemplate(new net.minecraft.resources.ResourceLocation(MODID, "cog")));
 
     // Creates a creative tab with the id "createaycn:example_tab" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
@@ -65,7 +65,7 @@ public class ExampleMod
             .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
-                output.accept(COPPER_LIKE_SMITHING_TEMPLATE.get());
+                output.accept(COG_SMITHING_TEMPLATE.get());
             }).build());
 
     public ExampleMod(FMLJavaModLoadingContext context)
@@ -127,8 +127,8 @@ public class ExampleMod
             net.minecraft.core.Registry<net.minecraft.world.item.armortrim.TrimPattern> patternRegistry = registryAccess.registryOrThrow(net.minecraft.core.registries.Registries.TRIM_PATTERN);
             net.minecraft.core.Registry<net.minecraft.world.item.armortrim.TrimMaterial> materialRegistry = registryAccess.registryOrThrow(net.minecraft.core.registries.Registries.TRIM_MATERIAL);
 
-            net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimPattern> patternKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_PATTERN, new net.minecraft.resources.ResourceLocation(MODID, "simple_stripe"));
-            net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimMaterial> materialKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_MATERIAL, new net.minecraft.resources.ResourceLocation(MODID, "copper_like"));
+            net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimPattern> patternKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_PATTERN, new net.minecraft.resources.ResourceLocation(MODID, "cog"));
+            net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimMaterial> materialKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_MATERIAL, new net.minecraft.resources.ResourceLocation(MODID, "cog"));
 
             boolean patternPresent = patternRegistry.getHolder(patternKey).isPresent();
             boolean materialPresent = materialRegistry.getHolder(materialKey).isPresent();
@@ -150,8 +150,8 @@ public class ExampleMod
             net.minecraft.core.Registry<net.minecraft.world.item.armortrim.TrimPattern> patternRegistry = registryAccess.registryOrThrow(net.minecraft.core.registries.Registries.TRIM_PATTERN);
             net.minecraft.core.Registry<net.minecraft.world.item.armortrim.TrimMaterial> materialRegistry = registryAccess.registryOrThrow(net.minecraft.core.registries.Registries.TRIM_MATERIAL);
 
-            net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimPattern> patternKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_PATTERN, new net.minecraft.resources.ResourceLocation(MODID, "simple_stripe"));
-            net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimMaterial> materialKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_MATERIAL, new net.minecraft.resources.ResourceLocation(MODID, "copper_like"));
+            net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimPattern> patternKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_PATTERN, new net.minecraft.resources.ResourceLocation(MODID, "cog"));
+            net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimMaterial> materialKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_MATERIAL, new net.minecraft.resources.ResourceLocation(MODID, "cog"));
 
             boolean patternPresent = patternRegistry.getHolder(patternKey).isPresent();
             boolean materialPresent = materialRegistry.getHolder(materialKey).isPresent();
@@ -183,7 +183,7 @@ public class ExampleMod
         if (event.getEntity() instanceof net.minecraft.server.level.ServerPlayer serverPlayer) {
             try {
                 ItemStack chestplate = new ItemStack(Items.DIAMOND_CHESTPLATE);
-                ItemStack template = new ItemStack(COPPER_LIKE_SMITHING_TEMPLATE.get());
+                ItemStack template = new ItemStack(COG_SMITHING_TEMPLATE.get());
                 ItemStack copper = new ItemStack(Items.COPPER_INGOT, 64);
 
                 // Try to construct an ArmorTrim for our custom material/pattern and apply it to the chestplate
@@ -197,8 +197,8 @@ public class ExampleMod
                     net.minecraft.core.Registry<net.minecraft.world.item.armortrim.TrimMaterial> materialRegistry = registryAccess.registryOrThrow(net.minecraft.core.registries.Registries.TRIM_MATERIAL);
 
                     // Obtain holders for our custom pattern and material (throws if missing)
-                    net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimPattern> patternKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_PATTERN, new net.minecraft.resources.ResourceLocation(MODID, "simple_stripe"));
-                    net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimMaterial> materialKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_MATERIAL, new net.minecraft.resources.ResourceLocation(MODID, "copper_like"));
+                    net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimPattern> patternKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_PATTERN, new net.minecraft.resources.ResourceLocation(MODID, "cog"));
+                    net.minecraft.resources.ResourceKey<net.minecraft.world.item.armortrim.TrimMaterial> materialKey = net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.TRIM_MATERIAL, new net.minecraft.resources.ResourceLocation(MODID, "cog"));
 
                     // Use non-throwing holder lookup so we can log presence without exceptions
                     java.util.Optional<net.minecraft.core.Holder.Reference<net.minecraft.world.item.armortrim.TrimPattern>> patternOpt = patternRegistry.getHolder(patternKey);

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "template": {
-    "item": "createaycn:copper_like_smithing_template"
+    "item": "createaycn:cog_smithing_template"
   },
   "base": {
     "item": "minecraft:diamond_chestplate"

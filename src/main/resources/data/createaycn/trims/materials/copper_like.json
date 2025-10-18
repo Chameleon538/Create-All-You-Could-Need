@@ -2,5 +2,5 @@
   "replace": false,
   "texture": "minecraft:item/copper_ingot",
   "ingredient": {"item":"minecraft:copper_ingot"},
-  "name": "trim_material.createaycn.copper_like"
+  "name": "trim_material.createaycn.cog"
 }

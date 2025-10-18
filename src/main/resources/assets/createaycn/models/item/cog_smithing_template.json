@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraft:item/diamond"
+    "layer0": "createaycn:item/cog_smithing_template"
   }
 }

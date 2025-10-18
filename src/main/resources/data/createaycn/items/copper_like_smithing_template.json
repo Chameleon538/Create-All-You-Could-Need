@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "createaycn:copper_like_smithing_template"
+          "name": "createaycn:cog_smithing_template"
         }
       ]
     }

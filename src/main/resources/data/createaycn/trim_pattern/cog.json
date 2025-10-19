@@ -1,0 +1,8 @@
+{
+  "asset_id": "createaycn:cog",
+  "template_item": "createaycn:cog_smithing_template",
+  "description": {
+    "translate": "trim_pattern.createaycn.cog",
+    "color": "#d46f33"
+  }
+}
